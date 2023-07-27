@@ -1,9 +1,7 @@
 from capitalize import capitalize
 
-if capitalize('hello!') != 'Hello!':
-    raise Exeption("Doesn't work!")
+assert capitalize('hello!') == 'Hello!'
 
-if capitalize('') != '':
-    raise Exception("Not work with empty string!")
+assert capitalize('') == ''
 
 print('All works correctly!')
